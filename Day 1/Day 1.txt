@@ -1,0 +1,67 @@
+﻿DAY 1
+
+1. Is React a library or a framework?
+- React is  a library.
+
+2. Difference between a library and a framework?
+- Both library and framework contain code written by other people that we can use but there are technical differences. A framework inverts the control meaning when you use a framework, you are provided with a model in which you give your input when needed (you don’t actually govern the flow of control) whereas in a library you use its features whenever needed and the user controls the flow.
+
+Ex: Assume you have a house and you want some furniture and for that you visit an Ikea. In this case ikea is a library which gives you power to build your furniture. On the other hand if you dont have a house and hire a contractor and builder to build it then they represent a framework, where your input will be required at times.
+
+3. What is CDN?
+- CDN stands for Content Delivery Network. CDNs are servers geographically spread across the globe that caches content close to the end users. All these servers have the same copy of data, one of them being the origin server. Whenever a user requests any resource, the CDN closest to the user’s location responds.
+
+4. What is Crossorigin?
+- crossorigin attrbite is used in the script while using CDNs because these CDNs are hosted on another domain and to establish connection or approve connection between different origins crossorigin is used. Crossorigin has two values:
+
+	a. crossorigin = “anonymous” This means that the file transfer be done wihout any authentication or credentials.
+
+	b. crossorigin = “use-credentials” This means that the request for the resource be made with credentials like HTTP authentication ans cookies.
+
+The default value is anonymous that is we only write crossorigin.
+
+5. Why we need two scripts to use React?
+- When using react via CDN we use two scripts one for React and other for ReactDOM. React is the core library which defines functions to create elements and React components. It doesn’t actually render them to the browser.
+
+ReactDOM is responsible for DOM manipulation, it comunicates with the brwoser API and manipulates the actual DOM.
+
+6. Explain React.createElement()
+- It is a function defined in the React Library used to create elements in React.
+	React.createElement(“h1”, {
+				id: “heading”},
+				”Hello World”)
+	a. first value is the name of tag
+	b. second is an object inside which we can specify attributes of the element
+	c. Third is the content inide the element.
+
+7. What is root element?
+- Root element is the topmost element in the DOM hierarchy all the components are children of root.
+
+8. Can we have more than one root element?
+- Yes we can have multiple root elements where each of them will act as the entry point to different component tree.
+
+9. What does render mean?
+- Render refers to the process of generating the visual representation of a component and displayin it on the screen.
+
+10. What is Emmet?
+- Plugin for text editors that improves HTML & CSS workflow.
+
+11. Why React is called React?
+- React is frontend library meaning it works with visuals that the user sees so its name resonates with this. It reacts whenever the user does something like click, hover etc. This is why its named React.
+
+12. react.development.js VS react.production.js?
+- React development has fast refresh, large js bundle size, optimizations disabled. React production is optimized for production smaller bundle size, caching, no debugging info.
+
+11. What is the difference between async and defer?
+- In HTML, the async and defer attributes are used to control the loading and execution of external JavaScript files. Both attributes help optimize the performance of web pages by improving how scripts are loaded, but they do so in different ways.
+
+async Attribute
+
+When a script tag has the async attribute, the script is downloaded asynchronously and executed as soon as it is available. This means the script will not block the rendering of the page during its download, but it will execute immediately once it is fully downloaded, which can potentially interrupt the parsing of the HTML.
+
+defer Attribute
+
+When a script tag has the defer attribute, the script is also downloaded asynchronously, but its execution is deferred until the HTML document has been completely parsed. This ensures that the script will not interrupt the parsing process and will be executed in the order they appear in the document.
+
+
+
