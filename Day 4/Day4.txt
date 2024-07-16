@@ -1,0 +1,37 @@
+Day 4
+
+1. What is Babel?
+-
+
+2. What are polyfills?
+- Modern JS is converted into older versions for compatibility.
+
+3. Tree Shaking (Power of Parcel )
+- Removing unwanted code.
+
+4. What is JSX?
+- "It is not HTML inside Javascript". JSX is a syntax extension for JavaScript that lets you write *HTML-like* markup inside a JavaScript file. 
+   FB devs built JSX.
+   JSX follows camelCase e.g. tabindex => tabIndex  
+   JSX => React.createElement => Object => HTML(DOM)  (Babel does this)
+
+5. Name of component starts with capital letter (convention)
+
+6. When rendering functional component we use it int HTML syntax i.e. root.render(<Header/>) while React element is used as it is e.g root.render(heading)
+
+7. What is (XSS)Cross-Side Scripting and JSX helps us prevent it?
+- 
+
+8. What is sanitization?
+- 
+
+9. What is Component Composition(Jargon)?
+- Passing components as props to other components.
+
+10. Why do we need keys in React children?
+-
+
+11. Can JSX work without Parcel?
+- JSX needs Babel cause only Babel understands it so even if Parcel is not installed and Babel is installed then JSX would work.
+
+12. 
